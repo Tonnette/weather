@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+}
+
+.myDate,
+.date {
+    padding: 0px;
+    margin: 5px 0px 0px 0px;
+}
+
+.myCity,
+.city {
+    padding: 0px 0px 0px 6px;
+    margin: 0px;
+}
+
+.myIconTop {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* Style the search field */
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    padding-left: 5px;
+}
+
+
+/* Style the submit button */
+
+form.example button {
+    float: right;
+    width: 15%;
+    padding: 5px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border-left: none;
+    /* Prevent double borders */
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: #0b7dda;
+}
+
+
+/* Clear floats */
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+}
+
+p {
+    font-weight: bold;
+    color: grey;
+}
+
+.bigContainer {
+    border: 1px solid lightgray;
+}
+
+#weatherTitle {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 50px;
+}
+
+.myHeader {
+    background-color: black;
+}
+
+.leftHandDiv {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 25px;
+    height: relative;
+}
+
+.userButtonsDiv {
+    margin: 25px 10px 0px 0px;
+    background-color: #fafeff;
+    text-align: center;
+}
+
+.myRow {
+    margin: 0px;
+    padding: 0px;
+}
+
+.myCol {
+    margin: 0px;
+    padding: 0px;
+    border-right: 1px solid lightgrey;
+    border-bottom: 0.5px solid lightgrey;
+    background-color: #fafeff;
+}
+
+.rightCol {
+    background-color: white;
+    border-bottom: 0.5px solid lightgrey;
+}
+
+.searchField {
+    padding: 10px;
+}
+
+.leftSide {
+    border: none;
+}
+
+.card {
+    border: none;
+    background-color: #2196F3;
+    color: white;
+    margin: 25px 25px 0px 0px;
+    width: 120%;
+    display: none;
+    text-align: center;
+    padding: 5px;
+}
+
+.redCard {
+    display: inline-block;
+    border: none;
+    background-color: red;
+    color: white;
+    width: 50px;
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+    z-index: -5;
+    border-radius: 5px;
+}
+
+.redCol {
+    margin: 0px;
+    padding: 0px;
+}
+
+.indexCol {
+    margin: Opx 0px 0px 0px;
+    padding: 10px 0px 0px 17px;
+    text-align: left;
+}
+.textCol {
+    text-align: left;
+}
+
+.city-btn {
+    padding: 10px;
+    width: 100%;
+    background-color: #0b7dda;
+    color: white;
+    text-align: center;
+    border: none;
+}
+
+.five-day {
+    display: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.uvindex {
+    display: none;
+}
+
+
+@media (min-width: 0px) and (max-width: 600px){
+    .myCity {
+        text-align: center;
+        padding-top: 0px;
+    }
+    .myDate {
+        text-align: center;
+    }
+    .myIconTop {
+        text-align: center;
+        padding-top: 50px;
+        padding-top: 0px;
+        
+    }
+    .indexCol {
+        text-align: center;
+    } 
+    .redCol{
+        text-align: center !important;
+      
+        padding-top: 15px;
+    }
+
+    /* .indexCol {
+        text-align: center;
+        
+    } */
+    .textCol {
+        text-align: center;
+
+    } 
+    .myCardRow {
+        position: relative;
+        left: 50%;
+        margin-left: 3px;
+        transform: translatex(-50%);
+    }
+    .colCard {
+        text-align: center;
+        width: 100px;
+    }
+    .weather-section {
+        padding-top: 0px;
+    }
+}
